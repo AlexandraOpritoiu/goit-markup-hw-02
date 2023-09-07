@@ -1,13 +1,46 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    color: #212121;
+    background-color: white;
 }
 
-.link :hover{
-color: tomato;
+:root {
+    --heading-font-family: 'Roboto', sans-serif;
+    --color: #212121;
+}
+
+.link :active{
+color: red;
 }
 
 .social-links .link:focus{
     color:orange;
+}
+
+.contacts .link:hover, 
+.contacts .link:focus{
+    color:green;
+}
+
+.active, .btn:hover{
+    cursor: pointer;
+    color:red;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h3 {
+    var(--heading-font-family);
+    font-weight: 700;
+}
+
+.portf {
+    color:#2196F3;
+}
+
+.details{
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
 }
