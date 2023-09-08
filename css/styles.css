@@ -23,17 +23,19 @@ color: red;
 .active,
 .btn:hover,
 .link:hover {
-    color: red;
+    color: #ff2342;
 }
 
 .btn {
+    font-family: 'Roboto';
 cursor: pointer;
-background-color: #2196F3;
 font-weight: 500;
     font-size: 16px;
     line-height: 26px;
 }
-
+.btn1 {
+    background-color: #2196F3;
+}
 ul{
     list-style: none;
 }
@@ -50,9 +52,8 @@ ul{
     text-align: center;
     font-weight: 900;
     font-size: 44px;
-    line-height: 4.28;
-    background-color:#2F303A; ;
-}
+    line-height: 4.28;}
+   
 .title-section h2{
     font-weight: 700;
     font-size: 36px;
@@ -70,3 +71,78 @@ ul{
 {text-align:center;
 }
 
+.footer-section {
+    font-weight: 400;
+    font-size: 14px;
+    line-height:1.17;
+    background-color: #2F303A;
+}
+.footer-section .contacts{
+    color: #ffffff;
+    font-style:normal;
+}
+.footer-section .link{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header-section{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.X {
+    background-color: #2F303A;
+}
+
+.title-section 
+.logo{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 2.18;
+}
+
+.logo .first-logo{
+    color:#2196F3;
+}
+
+.logo .second-logo{
+color: #000000;
+}
+
+.contacts .link{
+    text-decoration: none;
+ color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+}
+
+.prtf {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+}
+.link{
+    text-decoration: none;
+    color:#2196F3;
+}
+
+.studio-2{
+    text-decoration: none;
+    color:#212121;
+    font-weight:500;
+    font-size:14px;
+    line-height: 1.17;
+}
+
+.prtf-2{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    color:#2196F3;
+}
