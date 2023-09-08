@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
     background-color: white;
+    font-size:
 }
 
 :root {
@@ -9,13 +10,10 @@ body {
     --color: #212121;
 }
 
-.nav link :hover {
-    color: red;
-}
-
-.social-links .link:focus {
-    color: orange;
-}
+.active,
+.link: hover{
+color: red;
+} 
 
 .contacts .link:hover,
 .contacts .link:focus {
@@ -23,31 +21,52 @@ body {
 }
 
 .active,
-.btn:hover {
-    cursor: pointer;
+.btn:hover,
+.link:hover {
     color: red;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    background-color: #2196F3;
 }
 
-h1, h2, h3 {
-    var(--heading-font-family);
-    font-weight: 700;
+.btn {
+cursor: pointer;
+background-color: #2196F3;
+font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 ul{
     list-style: none;
 }
 
-.details p{
-    color: #757575;
+.text-section p, span{
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px
+    line-height: 1.71;
+    color: #757575;
 }
 
-.x link{
-    color:#2196F3;
+.title-section h1{
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 4.28;
+    background-color:#2F303A; ;
 }
+.title-section h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 3.01;
+    text-align: center;
+}
+.title-section h3 {
+    font-weight:500px;
+    font-size: 16px;
+    line height: 1.17;
+    text-align: center;
+}
+
+.title-section p
+{text-align:center;
+}
+
