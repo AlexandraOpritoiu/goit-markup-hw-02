@@ -2,11 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--color4);
     background-color: white;
-    font-size: 14px;
-}
-
-ul{
-    list-style: none;
+    font-weight: 400;
 }
 
 :root {
@@ -18,8 +14,54 @@ ul{
     --color5: #ECECEC;
     --color6: #000000;
     --color7: #2F303A;
-    --color8: #EEEEEE;}
+    --color8: #EEEEEE;
+    --color9: #ffffff;
+}
 
+ul{list-style: none;}
+
+.navigation-section .link{
+    color:var(--color4);
+text-decoration: none;
+}
+
+.navigation-section .link:active,{
+    color: var(--color2);
+}
+.contacts .link{
+    text-decoration: none;
+    font-style: normal;
+    color:var(--color3);
+}
+
+.contacts .link:hover,
+.contacts .link:focus
+{color:var(--color2);}
+
+.active,
+.btn:hover
+.btn:focus {
+    color: var(--color2);
+}
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.85;
+}
+.btn-all {
+    background-color: var(--color2);
+}
+.btn-request {
+    background-color: var(--color2);
+        width: 200px;
+        height: 50px;
+        top: 430px;
+        left: 700px;
+        radius: 4px;
+    }
 .logo {
     text-decoration: none;
     font-family: 'Raleway';
@@ -36,33 +78,6 @@ ul{
     color: var(--color6);
 }
 
-.active,
-.btn:hover {}
-
-.btn {
-    font-family: inherit;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.btn-1 {
-    background-color: var(--color2);
-
-    .btn-request {
-        width: 200px;
-        height: 50px;
-        top: 430px;
-        left: 700px;
-        radius: 4px;
-    }
-
-.header-section .link {
-     color: var(--color2);
-     text-decoration: none;
-    }
-
 .header-section {
     width: 1600px;
     background-color: var(--color5);
@@ -72,10 +87,9 @@ ul{
     width: 1600px;
     height: 600px;
     top: 80px;
-    background-color:red;
+    background-color: var(--color7);
 }
-
-.firstsection h1 {
+.first-section h1 {
     color: var(--color1);
     text-align: center;
     font-weight: 900;
@@ -83,33 +97,38 @@ ul{
     line-height: 4.28;
 }
 
-.second-section p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--color3);
+.second-section p{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+color: var(--color3);
 }
 
-.third-section h2 {
+.second-section h3{
+    font-weight: 700;
+    size:14px;
+    line:1.17;
+    color: var(--color4);
+}
+
+.third-section h2{
     font-weight: 700px;
     font-size: 36px;
     line-height: 3.01;
     text-align: center;
     color: var(--color4);
 }
-
 .third-section {
     width: 1600px;
 }
 
-.fourth-section h2 {
+.fourth-section h2{
     font-weight: 700px;
     font-size: 36px;
     line-height: 3.01;
     text-align: center;
     color: var(--color4);
 }
-
 .fourth-section p {
     font-weight: 400;
     font-size: 16px;
@@ -132,29 +151,30 @@ ul{
     color: var(--color4);
 }
 
+.text-section h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.57;
+    color: var(--color4);
+}
+
+.text-section span{
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 2.14;
+    color: var(--color3);
+
+}
 .footer-section {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.17;
-    background-color: #2F303A;
     width: 1600px;
     height: 251px;
     top: 2097px;
-}
-
-.footer-section .contacts {
-    color: #ffffff;
+    background-color: var(--color7);
+    color: var(--color9);
+} 
+.footer-section address{
     font-style: normal;
-}
-
-.footer-section .link {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.contacts .link {
-    text-decoration: none;
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
 }
