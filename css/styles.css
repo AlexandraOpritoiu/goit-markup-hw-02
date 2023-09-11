@@ -1,47 +1,50 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--color4);
     background-color: white;
     font-weight: 400;
 }
 
 :root {
     --heading-font-family: 'Roboto', sans-serif;
-    --color1: #F5F4FA;
-    --color2: #2196F3;
-    --color3: #757575;
-    --color4: #212121;
-    --color5: #ECECEC;
-    --color6: #000000;
-    --color7: #2F303A;
-    --color8: #EEEEEE;
-    --color9: #ffffff;
+    --hover-color: #2196F3;
+    --text-color: #757575;
+    --header-color: #212121;
+    --section-background: #2F303A;
 }
 
 ul{list-style: none;}
 
+.current {
+    color: var(--hover-color);
+}
+
 .navigation-section .link{
-    color:var(--color4);
+    color:var(--header-color);
 text-decoration: none;
 }
-
-.current{
-    color: var(--color2);
-}
-.contacts .link{
+.contacts-header .link{
     text-decoration: none;
     font-style: normal;
-    color:var(--color3);
+    font-size: 14px;
+    line-height: 1.17;
+    color:var(--text-color);
+    font-size: 500;}
+
+.contacts-footer .link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-color);
+    font-size: 400;
 }
 
-.contacts .link:hover,
-.contacts .link:focus
-{color:var(--color2);}
+.contacts-header .link:hover, .link:active{
+color:var(--hover-color);
+}
 
-.active,
-.btn:hover
-.btn:focus {
-    color: var(--color2);
+.contacts-footer .link:hover, .link.active {
+    color: var(--hover-color);
 }
 
 .btn {
@@ -50,48 +53,80 @@ text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.85;
-}
-.btn-all {
-    background-color: var(--color2);
-}
-.btn-request {
-    background-color: var(--color2);
-        width: 200px;
-        height: 50px;
-        top: 430px;
-        left: 700px;
-        radius: 4px;
+    background-color:var(--hover-color);
+    color: #fff;
+    width: 200px
+    height: 50px
+    top: 430px
+    left: 700px
+    border-radius: 4px;
+    cursor:pointer;
+    font-family: inherit;
     }
+
+.btn:hover {
+    background-color: var(--hover-color);
+    color:#fff;
+}
+.btn:active{
+    background-color: var(--hover-color);
+}
+
+/* butoane-portofoliu */
+.btn-filter{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.85px;
+    color:var(--header-color);
+    background-color: #F5F4FA;
+    width: 77px;
+    height: 26px;
+    top: 180px;
+    left: 959px;
+    cursor:pointer;
+    font-family: inherit;
+}
+
+.btn-filter:hover{
+    background-color:var(--hover-color);
+    color: #fff;
+}
+
+.btn-filter:active{
+background-color: var(--hover-color);
+
+}
+
 .logo {
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 2.18;
-    color:var(--color9);
+    color:#fff;
 }
 
 .logo .first-logo {
-    color: var(--color2);
+    color: var(--hover-color);
 }
 
 .logo .second-logo {
-    color: var(--color6);
+    color: #000;
 }
 
 .header-section {
     width: 1600px;
-    background-color: var(--color5);
+    background-color: #ECECEC;
 }
 
 .first-section {
     width: 1600px;
     height: 600px;
     top: 80px;
-    background-color: var(--color7);
+    background-color: var(--section-background);
 }
 .first-section h1 {
-    color: var(--color1);
+    color: #F5F4FA;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
@@ -102,14 +137,14 @@ text-decoration: none;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
-color: var(--color3);
+color: var(--text-color);
 }
 
 .second-section h3{
     font-weight: 700;
     size:14px;
     line:1.17;
-    color: var(--color4);
+    color: var(--header-color);
 }
 
 .third-section h2{
@@ -117,7 +152,7 @@ color: var(--color3);
     font-size: 36px;
     line-height: 3.01;
     text-align: center;
-    color: var(--color4);
+    color: var(--header-color);
 }
 .third-section {
     width: 1600px;
@@ -128,18 +163,18 @@ color: var(--color3);
     font-size: 36px;
     line-height: 3.01;
     text-align: center;
-    color: var(--color4);
+    color: var(--header-color);
 }
 .fourth-section p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.33;
     text-align: center;
-    color: var(--color3);
+    color: var(--text-color);
 }
 
 .fourth-section {
-    background-color: var(--color1);
+    background-color:#F5F4FA;
     width: 1600px;
 
 }
@@ -149,21 +184,21 @@ color: var(--color3);
     font-size: 16px;
     line-height: 1.33;
     text-align: center;
-    color: var(--color4);
+    color: var(--header-color);
 }
 
 .text-section h3{
     font-weight: 700;
     font-size: 18px;
     line-height: 2.57;
-    color: var(--color4);
+    color: var(--header-color);
 }
 
 .text-section span{
     font-weight: 400px;
     font-size: 16px;
     line-height: 2.14;
-    color: var(--color3);
+    color: var(--text-color);
 
 }
 .footer-section {
@@ -173,8 +208,8 @@ color: var(--color3);
     width: 1600px;
     height: 251px;
     top: 2097px;
-    background-color: var(--color7);
-    color: var(--color9);
+    background-color: var(--section-background);
+    color: #fff;
 } 
 .footer-section address{
     font-style: normal;
