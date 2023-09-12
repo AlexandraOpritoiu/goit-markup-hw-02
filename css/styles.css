@@ -65,11 +65,8 @@ color:var(--hover-color);
     }
 
 .btn:hover {
-    background-color: var(--hover-color);
+    background-color: #188CE8;
     color:#fff;
-}
-.btn:active{
-    background-color: var(--hover-color);
 }
 
 /* butoane-portofoliu */
@@ -79,7 +76,6 @@ color:var(--hover-color);
     line-height: 1.85px;
     color:var(--header-color);
     background-color: #F5F4FA;
-    width: 77px;
     height: 26px;
     top: 180px;
     left: 959px;
@@ -94,7 +90,6 @@ color:var(--hover-color);
 
 .btn-filter:active{
 background-color: var(--hover-color);
-
 }
 
 .logo {
