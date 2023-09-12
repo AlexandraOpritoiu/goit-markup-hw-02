@@ -83,10 +83,15 @@ color:var(--hover-color);
     font-family: inherit;
 }
 
-.btn-filter:hover{
+.btn-filter:hover:{
     background-color:var(--hover-color);
     color: #fff;
 }
+
+.btn-filter:focus{
+    background-color: var(--hover-color);
+    color: #fff;
+    }
 
 .btn-filter:active{
 background-color: var(--hover-color);
